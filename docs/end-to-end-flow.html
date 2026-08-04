@@ -288,7 +288,7 @@
   .limits { display: grid; gap: 14px; }
   .limits .item {
     display: grid;
-    grid-template-columns: 20px 1fr;
+    grid-template-columns: 20px minmax(0, 1fr);
     gap: 12px;
     font-size: 14.5px;
     color: var(--text-secondary);
@@ -572,10 +572,10 @@ python demo/realtime_demo.py</pre>
     <p class="kicker">07 &middot; Limitations</p>
     <h2>What this doesn't do</h2>
     <div class="limits">
-      <div class="item"><b>Keyword overlap, not embeddings.</b> Few-shot and failure retrieval match on shared words, not real semantic similarity.</div>
-      <div class="item"><b>No fine-tuned model.</b> General-purpose LLMs are called directly, as-is.</div>
-      <div class="item"><b>Fixed decomposition.</b> The planner produces steps per question, but there's no benchmark yet checking the plan's shape itself is correct, only that each step's SQL is valid.</div>
-      <div class="item"><b>One capability.</b> No orchestration layer routing between multiple tools; this agent only translates and answers.</div>
+      <div class="item"><span><b>Keyword overlap, not embeddings.</b> Few-shot and failure retrieval match on shared words, not real semantic similarity.</span></div>
+      <div class="item"><span><b>No fine-tuned model.</b> General-purpose LLMs are called directly, as-is.</span></div>
+      <div class="item"><span><b>Fixed decomposition.</b> The planner produces steps per question, but there's no benchmark yet checking the plan's shape itself is correct, only that each step's SQL is valid.</span></div>
+      <div class="item"><span><b>One capability.</b> No orchestration layer routing between multiple tools; this agent only translates and answers.</span></div>
     </div>
   </section>
 
