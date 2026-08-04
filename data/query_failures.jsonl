@@ -1,0 +1,2 @@
+{"question": "3+ bed homes in Austin", "sql": "SELECT * FROM properties WHERE bedrooms >= 3", "error": "column \"bedrooms\" does not exist\nLINE 1: SELECT * FROM properties WHERE bedrooms >= 3 LIMIT 50\n                                       ^\n"}
+{"question": "3+ bed homes", "sql": "SELECT * FROM properties WHERE bedrooms >= 3", "error": "column \"bedrooms\" does not exist\nLINE 1: SELECT * FROM properties WHERE bedrooms >= 3 LIMIT 50\n                                       ^\n"}
